@@ -1,28 +1,6 @@
-//
-// Goal: Create method to get incomplete tasks
-//
-// 1. Define getTasksToDo method
-// 2. Use filter to to return just the incompleted tasks (arrow function)
-// 3. Test your work by running the script
-
-const tasks = {
-  tasks: [
-    {
-      text: "Grocery shopping",
-      completed: true,
-    },
-    {
-      text: "Clean yard",
-      completed: false,
-    },
-    {
-      text: "Film course",
-      completed: false,
-    },
-  ],
-  getTasksToDo() {
-    return this.tasks.filter((task) => task.completed !== true);
-  },
+const axios = require("axios");
+const geoCode = (address, callback) => {
+  const url =
+    "https://api.mapbox.com/geocoding/v5/mapbox.places/London.json?access_token=pk.eyJ1IjoiYW1haG1hZG5pYSIsImEiOiJja2QzdXUzaDkwMGtyMnVydGplYzZkanYzIn0.J5JRf2GAotdolxBB4UWQZg&limit=1";
+  axios.get()
 };
-
-console.log(tasks.getTasksToDo());
