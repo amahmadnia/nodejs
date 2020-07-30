@@ -1,6 +1,27 @@
-<div class="main-content">
-  {{>header}}
-  <p>Use this site to get your weather!</p>
-  <img src="https://img.icons8.com/ios/50/000000/partly-cloudy-day.png"/>
-</div>
-{{>footer}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icon.png" />
+    <title>{{title}}</title>
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>{{title}}</h1>
+      <a href="/">Weather</a>
+      <a href="/about">About</a>
+      <a href="/help">Help</a>
+    </header>
+    <div class="main-content">
+      <p>Use this site to get your weather!</p>
+      <form action=""> 
+        <input type="text" value="London" placeholder="Location">
+        <button>Search</button>
+      </form>
+      <p id="msg-1"></p>
+      <p id="msg-2"></p>
+    </div>
+    {{>footer}}
