@@ -10,7 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "mapbox-gl": "^1.11.1",
     "node-fetch": "^2.6.0"
   }
